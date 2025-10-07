@@ -3,40 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>আমার ওয়েবসাইট</title>
+  <title>ছবি প্রদর্শন | My Website</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
     body {
-      font-family: "Noto Sans Bengali", sans-serif;
-      background-color: #f2f2f2;
-      text-align: center;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #ffffff);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       margin: 0;
-      padding: 50px;
+      padding: 20px;
     }
 
-    h1 {
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    .card h1 {
+      font-size: 20px;
       color: #333;
-      margin-bottom: 30px;
-    }
-
-    img {
-      width: 300px;  /* ছবির প্রস্থ */
-      height: auto;  /* উচ্চতা স্বয়ংক্রিয় */
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    p {
       margin-top: 15px;
-      color: #666;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin-top: 8px;
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <h1>💓প্রিয়💓</h1>
 
-  <!-- এখানে ছবির অবস্থান দিন -->
-  <img src="images/download.jpg" alt="আমার ছবি">
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/jahid727277-rgb/my-website/refs/heads/main/download.jpg" alt="My Image">
+    <h1>প্রদর্শিত ছবি</h1>
+    <p>এই ছবিটি সরাসরি GitHub থেকে লোড হচ্ছে।</p>
+  </div>
 
-  <p>💓ভালোবাসি তোমাকে💓</p>
+  <footer>© 2025 My Website | All rights reserved</footer>
+
 </body>
 </html>
